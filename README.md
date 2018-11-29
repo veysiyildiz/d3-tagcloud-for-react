@@ -3,10 +3,6 @@
 Another tag cloud for react with two variable fontSize and opacity 
 Create beautiful tag/word clouds using React. Uses the wonderful [d3-cloud](https://github.com/jasondavies/d3-cloud) under the hood.
 
-![react-tag-cloud-image](./react-tag-cloud.gif)
-
-
-[View live demo here](https://react-tag-cloud.stackblitz.io/) [(edit code)](https://stackblitz.com/edit/react-tag-cloud?file=App.js)
 
 
 ## Installation
@@ -76,8 +72,7 @@ rotate | Rotation in degrees | Function/Number | `0`
 
 ## Examples
 
-- [(Playground on StackBlitz)](https://stackblitz.com/edit/react-tag-cloud?file=App.js) [(source)](./examples/tagCloud/src/App.js) 
-- [ijzerenhein.nl](http://ijzerenhein.nl/)
+
 
 
 ## Resources
