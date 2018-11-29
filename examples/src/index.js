@@ -28,7 +28,7 @@ const pages = [
 ReactDOM.render(
   <Fragment>
     <GithubCorner
-      href="https://github.com/veysiyildiz/skill-tag-cloud-for-react"
+      href="https://github.com/veysiyildiz/d3-tagcloud-for-react"
       bannerColor="#fff"
       octoColor="#000"
       width={80}
@@ -45,7 +45,7 @@ ReactDOM.render(
         js: props => <CodeSpecimen {...props} lang="javascript" />,
         jsx: props => <ReactSpecimen {...props} />,
       }}
-      title="Skill Tag Cloud For React"
+      title="d3 tagcloud for react"
     />
   </Fragment>,
   document.getElementById('catalog'),
