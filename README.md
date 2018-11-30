@@ -144,7 +144,7 @@ class DemoCloud extends Component {
           fontFamily: 'sans-serif',
           // fontSize: () => Math.round(Math.random() * 50) + 16,
           fontSize: 30,
-          // color: () => randomColor(colorArray),
+          // color: () => randomColor(colorarray),
           padding: 5,
           width: '100%',
           height: '600px',
@@ -181,7 +181,7 @@ style.fontStyle | Font style needed for calculating layout | Function/String | `
 style.padding | Padding between tags (px) | Function/Number | `10`
 style.color | Color to be used by tags | Function/String | `randomColor`
 rotate | Rotation in degrees | Function/Number | `0`
-colorArray | Color Palette | Array | `null`
+colorarray | Color Palette | Array | `null`
 data | Tags Array | Array | `null`
 random | Randomizer function | Function | `Math.random`
 

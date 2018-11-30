@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import TagCloud, {renderData} from '../../src';
-const colorArray = [
+const colorarray = [
   '#8c5fc4',
   '#61b8ff',
   '#f7d286',
@@ -134,13 +134,13 @@ class DemoCloud extends Component {
           fontFamily: 'sans-serif',
           // fontSize: () => Math.round(Math.random() * 50) + 16,
           fontSize: 30,
-          // color: () => randomColor(colorArray),
+          // color: () => randomColor(colorarray),
           padding: 5,
           width: '100%',
           height: '600px',
         }}
         data={data}
-        colorArray={colorArray}
+        colorarray={colorarray}
       >
         {renderData(data)}
         <div 

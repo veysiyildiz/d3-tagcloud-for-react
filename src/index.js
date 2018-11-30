@@ -56,9 +56,9 @@ class TagCloud extends Component {
 		this.updateLayout(nextProps, true);
   }
   
-  randomColor(colorArray) {
-    if (colorArray) {
-      return colorArray[Math.floor((Math.random()*colorArray.length))];
+  randomColor(colorarray) {
+    if (colorarray) {
+      return colorarray[Math.floor((Math.random()*colorarray.length))];
     } else {
       let r = Math.round(Math.random() * 255);
       let g = Math.round(Math.random() * 255);
@@ -245,7 +245,7 @@ TagCloud.propTypes = {
 		PropTypes.func,
 		PropTypes.number
 	]),
-	colorArray:  PropTypes.array,
+	colorarray:  PropTypes.array,
 	data:  PropTypes.array,
 	random: PropTypes.func
 };
@@ -260,7 +260,7 @@ TagCloud.defaultProps = {
     opacity: 1
 	},
   rotate: 0,
-  colorArray: null,
+  colorarray: null,
   data: null,
 	random: Math.random
 };

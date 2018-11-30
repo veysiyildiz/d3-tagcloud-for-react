@@ -1,6 +1,6 @@
 {
   "name": "d3-tagcloud-for-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Another tag cloud for react using d3-cloud",
   "author": "Veysi YILDIZ",
   "user": "veysiyildiz",

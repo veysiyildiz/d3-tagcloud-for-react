@@ -103,9 +103,9 @@ var TagCloud = function (_Component) {
 		}
 	}, {
 		key: 'randomColor',
-		value: function randomColor(colorArray) {
-			if (colorArray) {
-				return colorArray[Math.floor(Math.random() * colorArray.length)];
+		value: function randomColor(colorarray) {
+			if (colorarray) {
+				return colorarray[Math.floor(Math.random() * colorarray.length)];
 			} else {
 				var r = Math.round(Math.random() * 255);
 				var g = Math.round(Math.random() * 255);
@@ -291,7 +291,7 @@ TagCloud.propTypes = {
 		opacity: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.number])
 	}),
 	rotate: _propTypes2.default.oneOfType([_propTypes2.default.func, _propTypes2.default.number]),
-	colorArray: _propTypes2.default.array,
+	colorarray: _propTypes2.default.array,
 	data: _propTypes2.default.array,
 	random: _propTypes2.default.func
 };
@@ -306,7 +306,7 @@ TagCloud.defaultProps = {
 		opacity: 1
 	},
 	rotate: 0,
-	colorArray: null,
+	colorarray: null,
 	data: null,
 	random: Math.random
 };
