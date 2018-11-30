@@ -301,8 +301,8 @@ TagCloud.defaultProps = {
 		fontFamily: 'serif',
 		fontStyle: 'normal',
 		fontWeight: 'normal',
-		fontSize: 20,
-		padding: 1,
+		fontSize: 30,
+		padding: 10,
 		opacity: 1
 	},
 	rotate: 0,
