@@ -21,7 +21,7 @@ export function renderData(data) {
   return renderedDataArray;
 }
 
-class SkillsCloud extends Component {
+class TagCloud extends Component {
 	constructor(props) {
 		super(props);
 		this._width = 0;
@@ -131,16 +131,6 @@ class SkillsCloud extends Component {
 						if (this.props.style.color && (typeof this.props.style.color === 'function')) {
 							style.color = this.props.style.color(item.child, index);
             }
-            
-            // if (onWordClick) {
-            //   texts.on('click', onWordClick);
-            // }
-            // if (onWordMouseOver) {
-            //   texts.on('mouseover', onWordMouseOver);
-            // }
-            // if (onWordMouseOut) {
-            //   texts.on('mouseout', onWordMouseOut);
-            // }
 						return React.cloneElement(
 							item.child,
 							{
@@ -159,7 +149,7 @@ class SkillsCloud extends Component {
 
 	getStyleValue(propName, word) {
 		const childValue = word.child.props.style ? word.child.props.style[propName] : undefined;
-		let value = childValue || this.props.style[propName] || SkillsCloud.defaultProps.style[propName];
+		let value = childValue || this.props.style[propName] || TagCloud.defaultProps.style[propName];
 		if (typeof value === 'function') {
 			value = value(word.child.props);
 		}
@@ -168,7 +158,7 @@ class SkillsCloud extends Component {
 	}
 
 	rotate(word) {
-		const value = word.child.props.rotate || this.props.rotate || SkillsCloud.defaultProps.rotate;
+		const value = word.child.props.rotate || this.props.rotate || TagCloud.defaultProps.rotate;
 		if (typeof value === 'function') {
 			return value(word.child.props);
 		}
@@ -222,7 +212,7 @@ class SkillsCloud extends Component {
 }
 
 
-SkillsCloud.propTypes = {
+TagCloud.propTypes = {
 	children: PropTypes.any,
 	style: PropTypes.shape({
 		fontFamily: PropTypes.oneOfType([
@@ -255,24 +245,24 @@ SkillsCloud.propTypes = {
 		PropTypes.func,
 		PropTypes.number
 	]),
-	colorarray:  PropTypes.array,
+	colorArray:  PropTypes.array,
 	data:  PropTypes.array,
 	random: PropTypes.func
 };
 
-SkillsCloud.defaultProps = {
+TagCloud.defaultProps = {
 	style: {
 		fontFamily: 'serif',
 		fontStyle: 'normal',
 		fontWeight: 'normal',
-		fontSize: 20,
-    padding: 1,
+		fontSize: 30,
+    padding: 10,
     opacity: 1
 	},
   rotate: 0,
-  colorarray: null,
-  data: {},
+  colorArray: null,
+  data: null,
 	random: Math.random
 };
 
-export default SkillsCloud;
+export default TagCloud;

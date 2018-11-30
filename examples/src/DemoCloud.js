@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import SkillsCloud, {renderData} from '../../src';
-const colorarray = [
+import TagCloud, {renderData} from '../../src';
+const colorArray = [
   '#8c5fc4',
   '#61b8ff',
   '#f7d286',
@@ -126,7 +126,7 @@ class DemoCloud extends Component {
   }
   render() {
     return (
-      <SkillsCloud 
+      <TagCloud 
         className='tag-cloud'
         // rotate={() => Math.round(Math.random() * 180)}
         // spiral={1}
@@ -140,7 +140,7 @@ class DemoCloud extends Component {
           height: '600px',
         }}
         data={data}
-        colorarray={colorarray}
+        colorArray={colorArray}
       >
         {renderData(data)}
         <div 
@@ -155,7 +155,7 @@ class DemoCloud extends Component {
           Black
         </div>
 
-      </SkillsCloud>
+      </TagCloud>
     )
   }
 }

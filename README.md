@@ -1,21 +1,20 @@
-# d3-tagcloud-for-react ☁️
+# Full Documentation
 
-Another tag cloud for react with two variable fontSize and opacity,
-Create beautiful tag/word clouds using React. Uses the wonderful [d3-cloud](https://github.com/jasondavies/d3-cloud) under the hood.
+[npm](https://www.npmjs.com/package/d3-tagcloud-for-react) / [demo](https://veysiyildiz.github.io/d3-tagcloud-for-react/#/demo)
 
+Another tag cloud for react with two variable fontSize and opacity, using the wonderful [d3-cloud](https://github.com/jasondavies/d3-cloud) under the hood.
 
+## Install
 
-## Installation
-
-	npm install d3-tagcloud-for-react
-	or
-	yarn add d3-tagcloud-for-react
+```code
+$ npm install d3-tagcloud-for-react
+```
 
 ## Usage
 
-```js
+```javascript
 import React, { Component } from 'react'
-import SkillsCloud, {renderData} from 'd3-tagcloud-for-react';
+import TagCloud, {renderData} from 'd3-tagcloud-for-react';
 
 const colorarray = [
   '#8c5fc4',
@@ -137,7 +136,7 @@ const data = [
 class DemoCloud extends Component {
   render() {
     return (
-      <SkillsCloud 
+      <TagCloud 
         className='tag-cloud'
         // rotate={() => Math.round(Math.random() * 180)}
         // spiral={1}
@@ -154,7 +153,7 @@ class DemoCloud extends Component {
         colorarray={colorarray}
       >
         {renderData(data)}
-        <div 
+        <div
           style={{
             fontSize: 30,
             fontWeight: 'bold',
@@ -165,50 +164,45 @@ class DemoCloud extends Component {
         >
           Black
         </div>
-
-      </SkillsCloud>
+      </TagCloud>
     );
   }
 }
 ```
 
-## Documentation
-
-`<SkillsCloud>` props:
+## `<TagCloud>` props
 
 name | description | type | default
 -----|-------------|------|---------
-style.fontSize | Font size needed for calculating layout | Function/Number | `20`
+style.fontSize | Font size needed for calculating layout | Function/Number | `30`
 style.fontFamily | Font family needed for calculating layout | Function/String | `serif`
 style.fontWeight | Font weight needed for calculating layout | Function/Number | `normal`
 style.fontStyle | Font style needed for calculating layout | Function/String | `normal`
-style.padding | Padding between tags (px) | Function/Number | `1`
-style.color | Color to be used by tags | Function/String | `(none)`
+style.padding | Padding between tags (px) | Function/Number | `10`
+style.color | Color to be used by tags | Function/String | `randomColor`
 rotate | Rotation in degrees | Function/Number | `0`
-spiral | Spiral | Function/String | `archimedean`
+colorArray | Color Palette | Array | `null`
+data | Tags Array | Array | `null`
 random | Randomizer function | Function | `Math.random`
 
-Any component can be used as a child component. `SkillsCloud` scans the child components for the following props for its layout calculation:
+## `<TagCloud>` child component props
+
+You can create or use any component as a child component. `TagCloud` looks for the following props for its layout calculation:
 
 name | description | type | default
 -----|-------------|------|---------
-style.fontSize | Font size needed for calculating layout | Function/Number | `20`
+style.fontSize | Font size needed for calculating layout | Function/Number | `30`
 style.fontFamily | Font family needed for calculating layout | Function/String | `serif`
 style.fontWeight | Font weight needed for calculating layout | Function/Number | `normal`
 style.fontStyle | Font style needed for calculating layout | Function/String | `normal`
-style.padding | Padding between tags (px) | Function/Number | `1`
+style.opacity | Opacity for Tags | Function/Number | `1`
+style.padding | Padding between tags (px) | Function/Number | `10`
 style.color | Color to be used by tag | Function/String | `(none)`
 rotate | Rotation in degrees | Function/Number | `0`
 
+## Showcase
 
-## Examples
-
-
-
-
-## Resources
-
-- [https://github.com/jasondavies/d3-cloud](https://github.com/jasondavies/d3-cloud)
+[Veysi YILDIZ (Cv)](https://veysiyildiz.github.io)
 
 ## License
 
