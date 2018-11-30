@@ -129,7 +129,6 @@ var TagCloud = function (_Component) {
 				_this2.setState({
 					wrappedChildren: children
 				});
-				console.log(children);
 			});
 		}
 	}, {

@@ -80,7 +80,6 @@ class TagCloud extends Component {
 			this.setState({
 				wrappedChildren: children
       });
-      console.log(children)
 		});
 	}
 
