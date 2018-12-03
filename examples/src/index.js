@@ -3,11 +3,14 @@ import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import GithubCorner from 'react-github-corner';
 import { Catalog, CodeSpecimen, ReactSpecimen, pageLoader } from 'catalog';
+import ReactGA from 'react-ga';
 import DemoCloud from './DemoCloud';
 
 import './styles.css';
 import 'purecss/build/pure.css';
 
+ReactGA.initialize('UA-130297711-3');
+ReactGA.pageview(window.location.pathname + window.location.search);
 const documentationImports = {};
 
 
